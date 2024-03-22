@@ -14,8 +14,6 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
 }
 
 .main-container {
@@ -23,6 +21,7 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    margin: auto;
 }
 
 a {
@@ -56,6 +55,23 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+/****** HEADER *****/
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.title ul li:first-child {
+    margin-right: 8px;
 }
 
 /****** Hebergements And Populaires ***********/
