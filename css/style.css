@@ -13,8 +13,7 @@
     color: var(--main-color);
 }
 
-body {
-}
+body
 
 .main-container {
     width: 100%;
@@ -137,8 +136,60 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Activités à Marseille ***********/
+.activite {
+    margin-top: 30.02px;
+    padding-left: 30px;
+    gap: 30px;
+}
+.activites-cards {
+    display: flex;
+    flex-direction: row;
+    padding-top:25.83px;
+    gap: 30px;
+}
+.activites-cards a {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 380px;
+}
+.activites-cards article {
+    width: 100%;
+    border-radius:  20px;
+    background-color: white;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+.activites-card img {
+    object-fit: cover;
+    height: 380px;
+    width: 100%;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
 
+}
+.activites-card .card-subtitle{
+    padding-left: 20px;
 
+}
+/******Footer***********/
+ footer {
+    margin-top: 150px;
+    background-color:#F2F2F2;
+ }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        padding-left: 20px;
+        gap: 15px;
+        justify-content: space-between;
+        width: 67%;
+    }
+
+    .footer ul{
+        list-style-type: none;
+        padding-left: 0px;
+    }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
