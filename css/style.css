@@ -67,6 +67,14 @@ a {
     justify-content: space-between;
 }
 
+.title img {
+    width: 61px;
+}
+
+.title .logo-container {
+    padding: 30px 0;
+}
+
 .title ul {
     list-style: none;
     padding: 0;
@@ -74,8 +82,17 @@ a {
     display: flex;
 }
 
+.title ul li {
+    padding-top: 30px;
+}
+
+.title ul li:hover {
+    color: #0065FC;
+    box-shadow: inset 0px 2px 0 0 #0065FC;    
+}
+
 .title ul li:first-child {
-    margin-right: 8px;
+    margin-right: 68px;
 }
 
 .search-form {
@@ -132,17 +149,28 @@ a {
     font-weight: 700;
 }
 
-.filters li {
-    width: calc(25% - 10px);
+.filters li {    
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     box-sizing: border-box;
-    padding: 4px 19px;
+    padding: 15px 19px;
     margin-right: 10px;
     margin-bottom: 20px;
     text-align: center;
 }
 
+.filters li i {
+    margin-right: 10px;
+}
+.info {
+    gap: 10px;
+}
+.info i {
+    border: 1px solid #D9D9D9;
+    border-radius:24px;
+    padding: 4px 10px;
+
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -160,7 +188,9 @@ a {
 .hebergements {
     width: 65%;
 }
-
+.hebergements h2 {
+size: 22px;
+}
 .hebergements-cards {
     /*display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -169,6 +199,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    width:105%;
 }
 
 .hebergements-cards a {
@@ -328,6 +359,36 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    .title {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .title .logo-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .title ul {
+        width: 100%;
+    }
+
+    .title ul li:first-child {
+        margin-right: 0;
+    }
+
+    .title ul li {
+        width: 50%;
+        padding: 15px 0;
+        text-align: center;
+        box-shadow:  0px 2px 0 0 #F2F2F2;    
+    }
+
+    .title ul li:hover {
+        box-shadow: 0px 2px 0 0 #0065FC;    
+    }
+
+
     .activites-cards {
         flex-wrap: wrap;
     }
