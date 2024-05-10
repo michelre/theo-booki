@@ -146,6 +146,12 @@ a {
     padding: 0;
     display: flex;
     font-weight: 700;
+    align-items: center;
+}
+
+.filters p {
+    margin-right: 10px;
+    margin-top: 0px;
 }
 
 .filters li {
@@ -419,6 +425,7 @@ footer {
 
     .card img {
         height: 140px;
+        max-width: none;
     }
 
     .populaires {
@@ -459,6 +466,11 @@ footer {
 
     .filters {
         flex-wrap: wrap;
+    }
+    .filters p {
+        margin-right: 0px;
+        margin-top: 0px;
+        align-items: none;
     }
 
     .filters li {
